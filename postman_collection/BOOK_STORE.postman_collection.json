@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "0e9db576-ee45-44b7-85c8-7f9d1945b7b2",
+		"name": "BOOK_STORE",
+		"description": "# Learn Go Programming by Building 11 Projects – Full Course, terzo pr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24655479"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9010/book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"zero to 2\",\n    \"Author\": \"Per 2\",\n    \"Publication\": \"Pinguan 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9010/book/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9010/book/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"zero to one\",\n    \"Author\": \"Per Thiel\",\n    \"Publication\": \"XXX\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:9010/book/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:9010/book/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
